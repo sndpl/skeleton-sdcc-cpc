@@ -5,6 +5,8 @@ An exemplary Amstrad Schneider CPC "hello world" program. To create the binary, 
 - [sdcc](http://sdcc.sourceforge.net/) (including sdasz80)
 - [hex2bin](http://hex2bin.sourceforge.net/)
 
+### Compiling
+
 A successful build run should result in something like this:
 
 ```
@@ -24,6 +26,6 @@ Pad Byte        = FF
 8-bit Checksum = 15
 ```
 
-# Thanks
+### Thanks
 
 Assembly snippets were included which originate from sdcc (crt0.s) and Hans Hansen (conio).
