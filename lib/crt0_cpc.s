@@ -1,4 +1,4 @@
-;; original version written by Hans Hansen, 2003
+;; sdcc generic Z80 crt0.s, modified for CPC by Hans Hansen, 2003
 
 .module crt0
 .globl _main
