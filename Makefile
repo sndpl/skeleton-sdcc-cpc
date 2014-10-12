@@ -9,7 +9,7 @@ SRCDIR=src
 OBJECTS=crt0_cpc.rel putchar.rel
 SOURCES=main.c
 
-all: clean $(OBJECTS) $(SOURCES) clean
+all: clean $(OBJECTS) $(SOURCES)
 
 %.rel:
 	$(AS) -o $@ $(LIBDIR)/$(@:.rel=.s)
