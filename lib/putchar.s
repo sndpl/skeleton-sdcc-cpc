@@ -1,3 +1,5 @@
+;; original version written by Hans Hansen, 2003
+
 .area _CODE
 
 _putchar::       
@@ -10,7 +12,6 @@ _putchar_rr_s::
     call    0xBB5A
     ret
 
-           
 _putchar_rr_dbs::
 
     ld      a,e

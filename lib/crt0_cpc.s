@@ -1,14 +1,18 @@
+;; original version written by Hans Hansen, 2003
+
 .module crt0
 .globl _main
 
 .area _HEADER (ABS)
 
 .org 0x100
+
     jp      init
   
 .org 0x110
 
 init:
+
     call    gsinit
     call    _main
     jp      _exit
@@ -23,14 +27,17 @@ init:
 .area _CODE
 
 __clock::
+
     ret
-  
+
 _exit::
+
     ret
-  
+
 .area _GSINIT
 
 gsinit::  
 
 .area _GSFINAL
+
     ret
