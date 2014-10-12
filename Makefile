@@ -19,4 +19,4 @@ $(SOURCES):
 	$(H2B) $(SOURCES:.c=.ihx)
 
 clean:
-	@rm -f *.asm *.bin *.cdb *.ihx *.lk *.lst *.map *.mem *.omf *.rst *.rel *.sym *.noi
+	rm -f *.asm *.bin *.cdb *.ihx *.lk *.lst *.map *.mem *.omf *.rst *.rel *.sym *.noi
