@@ -1,10 +1,9 @@
-#include <stdio.h>
+#include <conio.h>
 
-main()
+int main()
 {
-    printf("HELLO WORLD");
+    cputs("HELLO WORLD");
+    cgetc();
 
-    while(1)
-    {
-    }
+    return 0;
 }
