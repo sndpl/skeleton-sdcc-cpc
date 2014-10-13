@@ -1,9 +1,7 @@
 #include <conio.h>
 
-int main()
+void main()
 {
     cputs("HELLO WORLD");
     cgetc();
-
-    return 0;
 }
