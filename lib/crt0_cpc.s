@@ -1,4 +1,4 @@
-;; generic Z80 crt0.s from sdcc, modified by H. Hansen 2003
+; generic Z80 crt0.s from sdcc, modified by H. Hansen 2003
 
 .module crt0
 .globl _main
@@ -26,17 +26,17 @@ init:
 .area _HEAP
 .area _CODE
 
-__clock::
+__clock:
 
     ret
 
-_exit::
+_exit:
 
     ret
 
 .area _GSINIT
 
-gsinit::  
+gsinit:
 
 .area _GSFINAL
 

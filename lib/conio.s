@@ -4,14 +4,14 @@
 
 .globl _cgetc
 
-_cgetc::
+_cgetc:
     call    0xBB18
     ld      l, a
     ret
 
 .globl _cputs
 
-_cputs::
+_cputs:
     ld      hl, #2
     add     hl, sp
     ld      e, (hl)
