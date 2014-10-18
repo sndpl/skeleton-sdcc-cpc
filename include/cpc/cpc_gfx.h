@@ -1,5 +1,3 @@
-#include <cpc/cpc_defs.h>
-
 #ifndef __cpc_gfx_h__
 #define __cpc_gfx_h__
 

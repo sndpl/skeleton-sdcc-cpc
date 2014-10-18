@@ -1,5 +1,3 @@
-#include <cpc/cpc_defs.h>
-
 #ifndef __cpc_h__
 #define __cpc_h__
 
