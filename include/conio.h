@@ -12,6 +12,11 @@ char kbhit(void);
 char getch(void);
 
 /**
+ * Clear screen and reset cursor position
+ */
+void clrscr(void);
+
+/**
  * Write string to console
  */
 void cputs(const char* s);
