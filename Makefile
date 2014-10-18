@@ -7,7 +7,7 @@ INCLUDEDIR=./include
 LIBDIR=./lib
 SRCDIR=./src
 
-OBJECTS=crt0_cpc.rel conio.rel
+OBJECTS=crt0_cpc.rel conio.rel cpc.rel
 SOURCES=main.c
 
 all: $(OBJECTS) $(SOURCES)
