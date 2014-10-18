@@ -6,4 +6,9 @@
  */
 void CPC_SetMode(char m);
 
+/**
+ * Set screen border color (0-31)
+ */
+void CPC_SetBorder(char c);
+
 #endif
