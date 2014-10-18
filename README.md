@@ -1,4 +1,4 @@
-## Skeleton for C projects for Amstrad/Schneider CPC
+## Skeleton C project for Amstrad/Schneider CPC
 
 Will create a "hello world" binary, running on Amstrad/Schneider CPC Z80 platform and/or emulated hardware. Following CLI tools must be available to your build environment:
 
