@@ -1,4 +1,4 @@
-; generic Z80 crt0.s from sdcc, modified by H. Hansen 2003
+;; Generic Z80 crt0.s from sdcc, modified by H. Hansen 2003
 
 .module crt0
 .globl _main

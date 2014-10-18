@@ -1,4 +1,4 @@
-; written by H. Hansen, 2003
+;; Original version written by H. Hansen, 2003
 
 .area _CODE
 
