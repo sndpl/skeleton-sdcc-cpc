@@ -53,7 +53,7 @@ _CPC_SetPen:
     jp      0xBB90
 
 ; -----------------------------------------------------------------------------
-; void CPC_Paper(unsigned char p)
+; void CPC_SetPaper(unsigned char p)
 ; -----------------------------------------------------------------------------
 
 .globl _CPC_SetPaper
