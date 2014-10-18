@@ -1,5 +1,7 @@
 #include <conio.h>
+
 #include <cpc/cpc.h>
+#include <cpc/cpc_gfx.h>
 
 void main()
 {
@@ -11,5 +13,9 @@ void main()
     CPC_SetPaper(1);
 
     cputs("HELLO WORLD");
+
+    CPC_GFX_Move(0, 381);
+    CPC_GFX_Draw(87, 381);
+
     getch();
 }
