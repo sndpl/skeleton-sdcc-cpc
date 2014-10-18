@@ -1,5 +1,5 @@
 #include <conio.h>
-#include <cpc.h>
+#include <cpc/cpc.h>
 
 void main()
 {
