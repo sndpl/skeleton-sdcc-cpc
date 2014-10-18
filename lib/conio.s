@@ -2,12 +2,18 @@
 
 .area _CODE
 
-.globl _cgetc
+;; char getch(void)
+;;
+
+.globl _getch
 
 _cgetc:
     call    0xBB18
     ld      l, a
     ret
+
+;; void cputs(const char* s)
+;;
 
 .globl _cputs
 

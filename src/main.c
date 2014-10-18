@@ -3,5 +3,5 @@
 void main()
 {
     cputs("HELLO WORLD");
-    cgetc();
+    getch();
 }

@@ -1,7 +1,7 @@
 #ifndef __conio_h__
 #define __conio_h__
 
-char cgetc(void);
+char getch(void);
 void cputs(const char* s);
 
 #endif
