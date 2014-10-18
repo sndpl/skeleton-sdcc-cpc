@@ -1,5 +1,5 @@
-#ifndef __cpc_defines_h__
-#define __cpc_defines_h__
+#ifndef __cpc_defs_h__
+#define __cpc_defs_h__
 
 #define CPC_COLOR_BLACK          0
 #define CPC_COLOR_BLUE           1
