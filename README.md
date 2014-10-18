@@ -2,7 +2,7 @@
 
 An exemplary Amstrad Schneider CPC "hello world" program. To create the binary, following CLI tools must be present:
 
-- [sdcc](http://sdcc.sourceforge.net/) (including sdasz80)
+- [sdcc](http://sdcc.sourceforge.net/) (includes sdasz80, installable e.g. through apt-get)
 - [hex2bin](http://hex2bin.sourceforge.net/)
 
 #### Compiling
