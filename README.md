@@ -38,4 +38,4 @@ CPCDiskXP -File main.bin -AddAmsdosHeader 100 -AddToNewDsk image.dsk
 
 #### Thanks
 
-Assembly snippets were included which originate from sdcc (crt0.s), Hans Hansen (conio) and Raúl Simarro (cpcrslib).
+Assembly snippets were included which originate from sdcc (crt0.s), Hans Hansen (crt0_cpc.s, conio) and Raúl Simarro ([cpcrslib](https://code.google.com/p/cpcrslib/) ).
