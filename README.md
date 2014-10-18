@@ -1,13 +1,14 @@
-## Skeleton for sdcc/makefile projects
+## Skeleton for C projects for Amstrad/Schneider CPC
 
-An exemplary Amstrad Schneider CPC "hello world" program. To create the binary, following CLI tools must be present:
+Will create a "hello world" binary, running on Amstrad/Schneider CPC Z80 platform and/or emulated hardware. Following CLI tools must be available to your build environment:
 
+- GNU Make
 - [sdcc](http://sdcc.sourceforge.net/) (includes sdasz80, installable e.g. through apt-get)
 - [hex2bin](http://hex2bin.sourceforge.net/)
 
 #### Compiling
 
-A successful build should result in the following output:
+A build run should result in the following output:
 
 ```
 $ make
