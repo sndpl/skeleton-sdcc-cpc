@@ -3,11 +3,11 @@
 .area _CODE
 
 
-; char kbhit(void);
+; char kbhit(void)
 
 .globl _kbhit
 
-_kbhit::
+_kbhit:
     call    0xBB09
     ld      l, #1
     ret     c
@@ -15,7 +15,7 @@ _kbhit::
     ret
 
 
-; char getch(void);
+; char getch(void)
 
 .globl _getch
 
@@ -25,7 +25,7 @@ _getch:
     ret
 
 
-; void cputs(const char* s);
+; void cputs(const char* s)
 
 .globl _cputs
 
