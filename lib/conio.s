@@ -7,7 +7,7 @@
 
 .globl _getch
 
-_cgetc:
+_getch:
     call    0xBB18
     ld      l, a
     ret
