@@ -8,7 +8,7 @@ _putchar_rr_s:
     call    0xBB5A
     ret
 
-_putchar_rr_dbs::
+_putchar_rr_dbs:
     ld      a,e
     call    0xBB5A
     ret
