@@ -7,13 +7,13 @@ INCLUDEDIR=./include
 LIBDIR=./lib
 SRCDIR=./src
 
-OBJECTS=runtime.rel conio.rel cpc.rel
+OBJECTS=runtime.rel conio.rel putchar.rel cpc/cpc.rel
 SOURCES=main.c
 
 all: $(OBJECTS) $(SOURCES)
 
 %.rel:
-	$(AS) -o $@ $(LIBDIR)/$(@:.rel=.s)
+	$(AS) -o $(notdir $@) $(LIBDIR)/$(@:.rel=.s)
 
 $(SOURCES):
 	$(CC) -I$(INCLUDEDIR) $(CCFLAGS) $(addsuffix .rel, $(basename $(notdir $(OBJECTS)))) $(SRCDIR)/$(SOURCES)
