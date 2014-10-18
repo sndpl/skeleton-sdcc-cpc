@@ -1,9 +1,21 @@
-;; Original version written by H. Hansen, 2003
+; Original version written by H. Hansen, 2003
 
 .area _CODE
 
-;; char getch(void)
-;;
+
+; char kbhit(void);
+
+.globl _kbhit
+
+_kbhit::
+    call    0xBB09
+    ld      l, #1
+    ret     c
+    ld      l, #0
+    ret
+
+
+; char getch(void);
 
 .globl _getch
 
@@ -12,8 +24,8 @@ _getch:
     ld      l, a
     ret
 
-;; void cputs(const char* s)
-;;
+
+; void cputs(const char* s);
 
 .globl _cputs
 
