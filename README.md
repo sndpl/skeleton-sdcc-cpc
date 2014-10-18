@@ -2,7 +2,7 @@
 
 Will create a "hello world" binary, running on Amstrad/Schneider CPC Z80 platform and/or emulated hardware. Following CLI tools must be available to your build environment:
 
-- GNU Make
+- make (e.g. GNU Make)
 - [sdcc](http://sdcc.sourceforge.net/) (includes sdasz80, installable e.g. through apt-get)
 - [hex2bin](http://hex2bin.sourceforge.net/)
 
