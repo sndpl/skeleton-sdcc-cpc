@@ -1,5 +1,7 @@
-#ifndef __cpc_h__
-#define __cpc_h__
+#ifndef __cpc_cpc_h__
+#define __cpc_cpc_h__
+
+#include <cpc/defines.h>
 
 /**
  * Set screen mode 0 .. 2

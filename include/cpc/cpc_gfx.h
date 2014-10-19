@@ -1,5 +1,7 @@
-#ifndef __cpc_gfx_h__
-#define __cpc_gfx_h__
+#ifndef __cpc_cpc_gfx_h__
+#define __cpc_cpc_gfx_h__
+
+#include <cpc/defines.h>
 
 /**
  * Move to position x, y

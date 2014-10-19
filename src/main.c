@@ -1,7 +1,6 @@
 #include <conio.h>
 
 #include <cpc/cpc.h>
-#include <cpc/cpc_defs.h>
 #include <cpc/cpc_gfx.h>
 
 void init()
