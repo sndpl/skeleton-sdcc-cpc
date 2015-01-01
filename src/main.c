@@ -1,8 +1,9 @@
 #include <conio.h>
 
 #include <cpc/cpc.h>
-#include <cpc/cpc_fw.h>
-#include <cpc/cpc_fw_gfx.h>
+#include <cpc/cpc_fw_gra.h>
+#include <cpc/cpc_fw_scr.h>
+#include <cpc/cpc_fw_txt.h>
 
 void main()
 {
@@ -13,8 +14,8 @@ void main()
     CPC_FW_SetPen(0);
     CPC_FW_SetPaper(1);
 
-    CPC_FW_GFX_Move(0, 381);
-    CPC_FW_GFX_Draw(87, 381);
+    CPC_FW_Move(0, 381);
+    CPC_FW_Draw(87, 381);
 
     cputs("HELLO WORLD");
     getch();
