@@ -1,6 +1,8 @@
 #ifndef __cpc_cpc_fw_gra_h__
 #define __cpc_cpc_fw_gra_h__
 
+#include "cpc.h"
+
 /**
  * Move graphics cursor to position x, y
  */

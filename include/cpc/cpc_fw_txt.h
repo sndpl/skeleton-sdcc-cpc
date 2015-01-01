@@ -1,6 +1,8 @@
 #ifndef __cpc_cpc_fw_txt_h__
 #define __cpc_cpc_fw_txt_h__
 
+#include "cpc.h"
+
 /**
  * Set text foreground color ("pen")
  */

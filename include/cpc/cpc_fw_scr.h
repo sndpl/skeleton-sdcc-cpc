@@ -1,6 +1,8 @@
 #ifndef __cpc_cpc_fw_scr_h__
 #define __cpc_cpc_fw_scr_h__
 
+#include "cpc.h"
+
 /**
  * Set screen mode 0 .. 2
  */

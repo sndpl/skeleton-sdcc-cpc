@@ -1,6 +1,5 @@
 #include <conio.h>
 
-#include <cpc/cpc.h>
 #include <cpc/cpc_fw_gra.h>
 #include <cpc/cpc_fw_scr.h>
 #include <cpc/cpc_fw_txt.h>
