@@ -1,24 +1,24 @@
 .area _CODE
 
 ; -----------------------------------------------------------------------------
-; void CPC_SetMode(char m)
+; void CPC_FW_SetMode(char m)
 ; -----------------------------------------------------------------------------
 
-.globl _CPC_SetMode
+.globl _CPC_FW_SetMode
 
-_CPC_SetMode:
+_CPC_FW_SetMode:
     ld      hl, #2
     add     hl, sp
     ld      a, (hl)
     jp      0xBC0E
 
 ; -----------------------------------------------------------------------------
-; void CPC_SetBorder(char c)
+; void CPC_FW_SetBorder(char c)
 ; -----------------------------------------------------------------------------
 
-.globl _CPC_SetBorder
+.globl _CPC_FW_SetBorder
 
-_CPC_SetBorder:
+_CPC_FW_SetBorder:
     ld      hl, #2
     add     hl, sp
     ld      b, (hl)
@@ -26,12 +26,12 @@ _CPC_SetBorder:
     jp      0xBC38
 
 ; -----------------------------------------------------------------------------
-; void CPC_SetInk(unsigned char p, unsigned char c)
+; void CPC_FW_SetInk(unsigned char p, unsigned char c)
 ; -----------------------------------------------------------------------------
 
-.globl _CPC_SetInk
+.globl _CPC_FW_SetInk
 
-_CPC_SetInk:
+_CPC_FW_SetInk:
     ld      hl, #2
     add     hl, sp
     ld      a, (hl)
@@ -41,24 +41,24 @@ _CPC_SetInk:
     jp      0xBC32
 
 ; -----------------------------------------------------------------------------
-; void CPC_SetPen(unsigned char p)
+; void CPC_FW_SetPen(unsigned char p)
 ; -----------------------------------------------------------------------------
 
-.globl _CPC_SetPen
+.globl _CPC_FW_SetPen
 
-_CPC_SetPen:
+_CPC_FW_SetPen:
     ld      hl, #2
     add     hl, sp
     ld      a, (hl)
     jp      0xBB90
 
 ; -----------------------------------------------------------------------------
-; void CPC_SetPaper(unsigned char p)
+; void CPC_FW_SetPaper(unsigned char p)
 ; -----------------------------------------------------------------------------
 
-.globl _CPC_SetPaper
+.globl _CPC_FW_SetPaper
 
-_CPC_SetPaper:
+_CPC_FW_SetPaper:
     ld      hl, #2
     add     hl, sp
     ld      a, (hl)

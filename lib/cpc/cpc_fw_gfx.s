@@ -1,12 +1,12 @@
 .area _CODE
 
 ; -----------------------------------------------------------------------------
-; void CPC_GFX_Move(int x, int y)
+; void CPC_FW_GFX_Move(int x, int y)
 ; -----------------------------------------------------------------------------
 
-.globl _CPC_GFX_Move
+.globl _CPC_FW_GFX_Move
 
-_CPC_GFX_Move:
+_CPC_FW_GFX_Move:
     ld      hl, #2
     add     hl, sp
     ld      a, (hl)
@@ -33,12 +33,12 @@ _CPC_GFX_Move:
     ret
 
 ; -----------------------------------------------------------------------------
-; void CPC_GFX_Draw(int x, int y)
+; void CPC_FW_GFX_Draw(int x, int y)
 ; -----------------------------------------------------------------------------
 
-.globl _CPC_GFX_Draw
+.globl _CPC_FW_GFX_Draw
 
-_CPC_GFX_Draw:
+_CPC_FW_GFX_Draw:
     ld      hl, #2
     add     hl, sp
     ld      a, (hl)
@@ -65,12 +65,12 @@ _CPC_GFX_Draw:
     ret
 
 ; -----------------------------------------------------------------------------
-; void CPC_GFX_VSync(void)
+; void CPC_FW_GFX_VSync(void)
 ; -----------------------------------------------------------------------------
 
-.globl _CPC_GFX_VSync
+.globl _CPC_FW_GFX_VSync
 
-_CPC_GFX_VSync:
+_CPC_FW_GFX_VSync:
     ld      b, #0xF5
 
 syncwait$:
