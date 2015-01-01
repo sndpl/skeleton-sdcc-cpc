@@ -20,7 +20,7 @@ all: $(OBJECTS) $(SOURCES)
 
 $(SOURCES):
 	$(CC) -I$(INCLUDEDIR) $(CCFLAGS) $(addsuffix .rel, $(basename $(notdir $(OBJECTS)))) $(SRCDIR)/$(SOURCES)
-	$(OBJCOPY) --gap-fill 0xFF -Iihex -Obinary $(SOURCES:.c=.ihx) $(BINARY)
+	$(OBJCOPY) -Iihex -Obinary $(SOURCES:.c=.ihx) $(BINARY)
 
 clean:
 	rm -f *.asm *.bin *.cdb *.ihx *.lk *.lst *.map *.mem *.omf *.rst *.rel *.sym *.noi
