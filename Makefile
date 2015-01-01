@@ -7,7 +7,7 @@ INCLUDEDIR=include
 LIBDIR=lib
 SRCDIR=src
 
-OBJECTS=$(shell cd $(LIBDIR) && find . -name '*.s')
+OBJECTS=runtime.s conio.s cpc/cpc_fw_km.s cpc/cpc_fw_scr.s cpc/cpc_fw_txt.s
 SOURCES=main.c
 BINARY=main.bin
 
