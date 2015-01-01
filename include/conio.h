@@ -17,6 +17,11 @@ char getch(void);
 void clrscr(void);
 
 /**
+ * Write character to console
+ */
+void putch(unsigned char c);
+
+/**
  * Write string to console
  */
 void cputs(const char* s);
