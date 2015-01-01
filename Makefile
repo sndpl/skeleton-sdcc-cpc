@@ -1,25 +1,26 @@
 AS=sdasz80
-H2B=hex2bin
 CC=sdcc
 CCFLAGS=-V -mz80 --code-loc 0x0138 --data-loc 0 --no-std-crt0
+OBJCOPY=objcopy
 
 INCLUDEDIR=include
 LIBDIR=lib
 SRCDIR=src
 
 OBJECTS=$(shell cd $(LIBDIR) && find . -name '*.s')
-SOURCE=main.c
+SOURCES=main.c
+BINARY=main.bin
 
 .PHONY: all
 
-all: $(OBJECTS) $(SOURCE)
+all: $(OBJECTS) $(SOURCES)
 
 %.s:
 	$(AS) -o $(notdir $(@:.s=.rel)) $(LIBDIR)/$@
 
-$(SOURCE):
-	$(CC) -I$(INCLUDEDIR) $(CCFLAGS) $(addsuffix .rel, $(basename $(notdir $(OBJECTS)))) $(SRCDIR)/$(SOURCE)
-	$(H2B) $(SOURCE:.c=.ihx)
+$(SOURCES):
+	$(CC) -I$(INCLUDEDIR) $(CCFLAGS) $(addsuffix .rel, $(basename $(notdir $(OBJECTS)))) $(SRCDIR)/$(SOURCES)
+	$(OBJCOPY) --gap-fill 0xFF -Iihex -Obinary $(SOURCES:.c=.ihx) $(BINARY)
 
 clean:
 	rm -f *.asm *.bin *.cdb *.ihx *.lk *.lst *.map *.mem *.omf *.rst *.rel *.sym *.noi
