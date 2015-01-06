@@ -7,7 +7,7 @@ INCLUDEDIR=include
 LIBDIR=lib
 SRCDIR=src
 
-OBJECTS=runtime.s conio.s cpc/cpc_fw_km.s cpc/cpc_fw_scr.s cpc/cpc_fw_txt.s
+OBJECTS=runtime.s putchar.s
 SOURCES=main.c
 BINARY=main.bin
 

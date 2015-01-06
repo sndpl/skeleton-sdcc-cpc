@@ -23,15 +23,15 @@ init:
 .area _HEAP
 .area _CODE
 
-__clock:
+__clock::
     ret
 
-_exit:
+_exit::
     ret
 
 .area _GSINIT
 
-gsinit:
+gsinit::
 
 .area _GSFINAL
     ret
